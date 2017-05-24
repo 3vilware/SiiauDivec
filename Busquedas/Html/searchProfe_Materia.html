@@ -1,0 +1,53 @@
+<!DOCTYPE-HTML>
+<html>
+    <head>
+        <title>Buscar Profesor por Materia</title>
+	<meta charset="UTF-8">
+        <link rel="icon" href="http://www.udg.mx/sites/default/files/escudo.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="index.css">
+        <script src="jquery.min.js"></script>
+        <script src="buscar_profesor_materia_divec.js"></script>
+    </head>
+    <body>
+        <ul class="topHorizontalNav">
+            <li><a href="index.html"><img src="http://www.udg.mx/sites/default/files/escudo_0.png" style="height:70px; "></a></li>
+            <li><a class="vinc" href="index.html">Home</a></li>
+            <li class="dropdown"><a href="javascript:void(0)" class="activeDropbtn">Buscar</a>
+                <div class="dropdown-content">
+                    <a href="searchProfe.html">Profesor</a>
+                    <a href="searchMateria.html">NRCs</a>
+                    <a class="activeDropContent" href="searchProfe_Materia.html">Materia</a>
+                    <a href="searchProfe_Puesto.html">Puesto</a>
+                </div>
+            </li>
+        </ul>
+        <div class="content">
+            <form id="form">
+                <br>Nombre Materia:
+                <input id="nombre" type="text" name="patron">
+                <br>Ciclo:
+                <select id="ciclo" name="cicle">
+                    <option value="201310">2013A</option>
+                    <option value="201320">2013B</option>
+                    <option value="201410">2014A</option>
+                    <option value="201420">2014B</option>
+                    <option value="201510">2015A</option>
+                    <option value="201520">2015B</option>
+                    <option value="201610">2016A</option>
+                    <option value="201620">2016B</option>
+                    <option value="201710">2017A</option>
+                </select>
+            </form>
+            <input id="boton_buscar" type="button" value="Buscar"><br>
+            <table id="resultado">
+              <tr>
+                <th>Nombre</th>
+                <th>Salario</th>
+                <th>Puesto</th>
+                <th>Carrera</th>
+              </tr>
+            </table>
+        </div>
+    </body>
+</html>
